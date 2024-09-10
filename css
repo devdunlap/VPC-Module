@@ -1,0 +1,21 @@
+terraform/
+├── main.tf
+├── variables.tf
+├── outputs.tf
+├── locals.tf
+├── modules/
+│   ├── vpc/
+│   │   ├── main.tf
+│   │   ├── variables.tf
+│   │   ├── outputs.tf
+│   ├── ec2/
+│   │   ├── main.tf
+│   │   ├── variables.tf
+│   │   ├── outputs.tf
+│   ├── rds/
+│   │   ├── main.tf
+│   │   ├── variables.tf
+│   │   ├── outputs.tf
+├── backend.tf
+└── README.md
+
