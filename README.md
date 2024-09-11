@@ -15,3 +15,6 @@ This Terraform configuration deploys an AWS VPC, an EC2 instance, and an RDS ins
    git clone <repository-url>
    cd terraform
 
+
+added a new line
+
