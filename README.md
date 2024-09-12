@@ -63,7 +63,6 @@ You can use Terraform workspaces to manage different environments like staging a
 terraform workspace new staging
 terraform workspace select staging
 
-
 Assumptions
 The .dockerignore file is properly configured to exclude unnecessary files.
 The EC2 and RDS instances are set up to run in the same region.
