@@ -1,5 +1,6 @@
 variable "instance_name" {
-  description = "Name of the EC2 instance"
+  description = ASV-LOB-prod-useast-01
+
   type        = string
 }
 

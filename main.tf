@@ -20,7 +20,6 @@ module "vpc" {
   cidr_block      = var.vpc_cidr_block
   public_subnets  = var.public_subnets
   private_subnets = var.private_subnets
-  enable_nat_gateway = var.enable_nat_gateway
 }
 
 # Include EC2 Module
@@ -29,7 +28,6 @@ module "ec2" {
   instance_name     = var.ec2_instance_name
   ami_id            = var.ec2_ami_id
   instance_type     = var.ec2_instance_type
-  vpc_id            = module.vpc.vpc_id
   subnet_id         = module.vpc.public_subnet_ids[0]
   security_group_id = module.vpc.default_sg_id
 }
@@ -43,7 +41,6 @@ module "rds" {
   allocated_storage = var.rds_allocated_storage
   username          = var.rds_username
   password          = var.rds_password
-  vpc_id            = module.vpc.vpc_id
   subnet_ids        = module.vpc.private_subnet_ids
   security_group_id = module.vpc.default_sg_id
 }
