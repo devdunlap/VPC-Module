@@ -2,7 +2,7 @@ resource "aws_db_instance" "main" {
   allocated_storage    = var.allocated_storage
   engine               = var.engine
   instance_class       = var.instance_class
-  name                 = var.db_instance_name
+  identifier           = var.db_instance_name
   username             = var.username
   password             = var.password
   vpc_security_group_ids = [var.security_group_id]
