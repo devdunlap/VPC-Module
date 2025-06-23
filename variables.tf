@@ -78,3 +78,14 @@ variable "rds_password" {
   type        = string
 }
 
+# IAM Variables
+variable "iam_user_name" {
+  description = "The name of the IAM user to create"
+  type        = string
+}
+
+variable "iam_policy_arn" {
+  description = "The ARN of the policy to attach to the user"
+  type        = string
+}
+

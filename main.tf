@@ -45,3 +45,9 @@ module "rds" {
   security_group_id = module.vpc.default_sg_id
 }
 
+#Include IAM Role Module
+module "iam" {
+  source     = "./modules/iam"
+  user_name  = var.iam_user_name
+  policy_arn = var.iam_policy_arn
+}
