@@ -73,13 +73,13 @@ variable "storage_encrypted" {
 variable "deletion_protection" {
   description = "If the DB instance should have deletion protection enabled"
   type        = bool
-  default     = true
+  default     = false
 }
 
 variable "environment" {
   description = "The environment for tagging"
   type        = string
-  default     = "dev"
+  default     = "QA"
 }
 
 
