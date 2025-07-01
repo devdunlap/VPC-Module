@@ -79,7 +79,7 @@ variable "deletion_protection" {
 variable "environment" {
   description = "The environment for tagging"
   type        = string
-  default     = "dev"
+  default     = "QA"
 }
 
 

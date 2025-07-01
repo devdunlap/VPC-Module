@@ -1,0 +1,20 @@
+[1mdiff --git a/modules/rds/variables.tf b/modules/rds/variables.tf[m
+[1mindex a161169..17dd576 100644[m
+[1m--- a/modules/rds/variables.tf[m
+[1m+++ b/modules/rds/variables.tf[m
+[36m@@ -73,13 +73,13 @@[m [mvariable "storage_encrypted" {[m
+ variable "deletion_protection" {[m
+   description = "If the DB instance should have deletion protection enabled"[m
+   type        = bool[m
+[31m-  default     = true[m
+[32m+[m[32m  default     = false[m[41m[m
+ }[m
+ [m
+ variable "environment" {[m
+   description = "The environment for tagging"[m
+   type        = string[m
+[31m-  default     = "dev"[m
+[32m+[m[32m  default     = "QA"[m[41m[m
+ }[m
+ [m
+ [m
